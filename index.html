@@ -4558,7 +4558,7 @@ form{
   .bp3-running-text table th, table.bp3-html-table th{
     color:#182026;
     font-weight:600; }
-  
+
   .bp3-running-text table td,
   table.bp3-html-table td{
     color:#182026; }
@@ -14245,24 +14245,24 @@ a.anchor-link {
                 },
                 displayAlign: 'center',
                 CommonHTML: {
-                    linebreaks: { 
-                    automatic: true 
+                    linebreaks: {
+                    automatic: true
                     }
                 },
                 "HTML-CSS": {
-                    linebreaks: { 
-                    automatic: true 
+                    linebreaks: {
+                    automatic: true
                     }
                 }
             });
-        
+
             MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
         }
     }
     init_mathjax();
     </script>
     <!-- End of mathjax configuration --></head>
-<body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
+<body data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 
 <!-- ========== PAGE HEADER (START) ========== -->
   <header class="header">
@@ -14273,8 +14273,8 @@ a.anchor-link {
     <!-- NAVIGATION MENU -->
     <nav class="nav__menu">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="https://kristianbonnici.github.io/">Home</a></li>
+        <li><a href="https://kristianbonnici.github.io/portfolio.html">Portfolio</a></li>
       </ul>
     </nav>
 
@@ -14296,10 +14296,15 @@ a.anchor-link {
   </header>
   <!-- ========== PAGE HEADER (END) ========== -->
 
+  <!-- ========== CONTENT (START) ========== -->
+    <div class="content-wrap">
+
+      <section class="projects">
+
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><font size=6> <strong>Explainable Machine Learning:</strong></p>
-<p>– Opening up the <strong>[black box]</strong> with <strong><font color=red>S</font><font color=darkpurple>H</font><font color=purple>A</font><font color=blue>P</font></strong></p>
+  <p><font size=6> <strong>Explainable Machine Learning:</strong></p>
+  <p>– Opening up the <strong>[black box]</strong> with <strong><font color=red>S</font><font color=darkpurple>H</font><font color=purple>A</font><font color=blue>P</font></strong></p>
 
 </div>
 </div>
@@ -14353,7 +14358,7 @@ a.anchor-link {
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -14426,10 +14431,10 @@ n===t._wrapperState.initialValue&&(e.value=n)}});t.exports=l},function(t,e,n){"u
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># dataset</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;datasets/fin_house_clea.csv&#39;</span><span class="p">,</span> 
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;datasets/fin_house_clea.csv&#39;</span><span class="p">,</span>
                  <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;,&quot;</span><span class="p">,</span>
-                 <span class="n">dtype</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Postal_code&#39;</span><span class="p">:</span><span class="s1">&#39;str&#39;</span><span class="p">},</span> 
-                 <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">,</span> 
+                 <span class="n">dtype</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Postal_code&#39;</span><span class="p">:</span><span class="s1">&#39;str&#39;</span><span class="p">},</span>
+                 <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">,</span>
                  <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 
 <span class="c1"># features</span>
@@ -14464,8 +14469,8 @@ n===t._wrapperState.initialValue&&(e.value=n)}});t.exports=l},function(t,e,n){"u
 <span class="n">cb</span> <span class="o">=</span> <span class="n">catboost</span><span class="o">.</span><span class="n">CatBoostRegressor</span><span class="p">(</span><span class="n">loss_function</span><span class="o">=</span><span class="s1">&#39;RMSE&#39;</span><span class="p">)</span>
 
 <span class="c1"># training the model</span>
-<span class="n">cb</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="o">=</span><span class="n">X_train</span><span class="p">,</span> 
-       <span class="n">y</span><span class="o">=</span><span class="n">y_train</span><span class="p">,</span> 
+<span class="n">cb</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="o">=</span><span class="n">X_train</span><span class="p">,</span>
+       <span class="n">y</span><span class="o">=</span><span class="n">y_train</span><span class="p">,</span>
        <span class="n">cat_features</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Postal_code&#39;</span><span class="p">,</span> <span class="s2">&quot;Building_type&quot;</span><span class="p">],</span>
        <span class="n">silent</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
@@ -14488,7 +14493,7 @@ n===t._wrapperState.initialValue&&(e.value=n)}});t.exports=l},function(t,e,n){"u
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -14539,7 +14544,7 @@ R-squared: 0.921
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -14617,7 +14622,7 @@ Prediction:
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -14665,7 +14670,7 @@ Prediction:
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -14708,7 +14713,7 @@ Prediction:
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">shap_values</span> <span class="o">=</span> <span class="n">explainer</span><span class="o">.</span><span class="n">shap_values</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
 
-<span class="n">shap</span><span class="o">.</span><span class="n">dependence_plot</span><span class="p">(</span><span class="s2">&quot;Age&quot;</span><span class="p">,</span> <span class="n">shap_values</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> 
+<span class="n">shap</span><span class="o">.</span><span class="n">dependence_plot</span><span class="p">(</span><span class="s2">&quot;Age&quot;</span><span class="p">,</span> <span class="n">shap_values</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span>
                      <span class="n">interaction_index</span><span class="o">=</span><span class="s1">&#39;m2&#39;</span><span class="p">,</span> <span class="n">xmax</span><span class="o">=</span><span class="mi">150</span><span class="p">)</span>
 </pre></div>
 
@@ -14724,7 +14729,7 @@ Prediction:
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -14752,8 +14757,36 @@ Prediction:
 <p>We showed how <font color=red>S</font><font color=darkpurple>H</font><font color=purple>A</font><font color=blue>P</font> can <strong>(1)</strong> explain the output of a single prediction, <strong>(2)</strong> give an overview of the model's decision making, and <strong>(3)</strong> show the effect of a single feature across the whole dataset.</p>
 <p>In addition to improving the user experience and trust in predictions with interpretability, <font color=red>S</font><font color=darkpurple>H</font><font color=purple>A</font><font color=blue>P</font> can help in implementing the social right to explanation. By opening up the black box, <font color=red>S</font><font color=darkpurple>H</font><font color=purple>A</font><font color=blue>P</font> provides an explanation for the model output. This is mandatory for decisions that significantly affect an individual.</p>
 
+
 </div>
 </div>
+</section>
+
+
+<section class="get-in-touch">
+      <h2 class="get-in-touch">Get In Touch</h2>
+
+      <p class="get-in-touch">Let's keep in touch. I'm always happy to receive messages, whether it is a general question, suggestion, or if you just want to say hi.</p>
+
+      <br>
+
+      <div class="contact-me">
+        <a href="mailto:kristian.bonnici@aalto.fi" class="btn" target="_blank">
+          <ion-icon name="mail-outline" role="img" class="md hydrated" aria-label="mail outline"></ion-icon> &nbsp; Contact
+        </a>
+        <a href="https://www.linkedin.com/in/kristian-bonnici-b23bb5133/" class="btn" target="_blank">
+          <ion-icon name="logo-linkedin" role="img" class="md hydrated" aria-label="logo linkedin"></ion-icon> &nbsp; LinkedIn
+        </a>
+        <a href="https://github.com/kristianbonnici" class="btn" target="_blank">
+          <ion-icon name="logo-github" role="img" class="md hydrated" aria-label="logo github"></ion-icon> &nbsp; GitHub
+        </a>
+      </div>
+    </section>
+
+</div>
+  <!-- ===== IONICONS ===== -->
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
 </body>
 
 
